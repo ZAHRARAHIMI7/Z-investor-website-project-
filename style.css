@@ -1,0 +1,226 @@
+* Reset */
+* {
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:Arial, sans serif;
+   }
+.body {
+	 background-color: #0C031F;
+	 color: white;
+}
+
+/* Navbar */
+.header {
+	background-color: #210635;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.container {
+  display:flex; 
+  justify-content:space-between;
+  margin: auto;
+  padding: 1px 2px;
+  background:#250B3C;
+  color:white;
+  border-radius: 20px;
+  align-items: auto;
+  max-width: 1200px;
+}
+.logo {
+	font-size: 1.9rem;
+	font-weight: bold;
+	font-family:'Lucida Console', monospace;
+	text-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+}
+.menu {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+	font-weight: bold;
+}
+.menu a:hover{
+	color: #D2A2E6;
+}
+
+/* Hero */
+.hero {
+	background-color: #461F99; 
+	background-repeat: no-repeat;
+	background-image: url('Z2.jpg');
+	background-size:cover;
+	background-position: center;
+	border-radius: 20px;
+	min-height:80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+.content, h1 {
+	text-align: center;
+    color:white;
+	text-shadow: 0 0 10px rgba(160,85, 247, 0.7);
+	font-size: 3.5rem;
+	margin-bottom:20px;
+}
+.content, p {
+	font-size: 1.5rem;
+	margin-bottom: 50px;
+}
+.btn {
+	color: #fff;
+	padding: 15px 25px;
+	margin: 80px;
+	border: 2px solid #D2A2E6;
+	border-radius: 50px;
+	background: transparent;
+	transition: 0.3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.btn, a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.btn:hover {
+	color: #000;
+	background-color:#D2A2E6;
+	box-shadow: 0 0 45px #D2A2E6;
+}
+
+   /* services and Opportunities */
+.section, h2 {
+	padding: 25px 50px;
+	text-align: center;
+	font-family:'Lucida Console', monospace;
+	background-image: url('b.jpg');
+	border-radius:1rem;
+	color: white;
+	text-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+}
+/* cards layout */
+.cards {
+	display: grid;
+	gap: 20px 20px;
+	grid-template-columns: repeat(3,minmax(280px, 1fr));
+	margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+    
+}
+.card {
+	background: #0C031F;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #0C031F;
+    text-align: left;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    background-image: linear-gradient(transparent, #004fff, #45f3ff, transparent, transparent, #9900ff, #ff00a6, transparent);
+    height: 200%;
+    animation: shape 6s linear infinite;
+    top: -80%;
+    left: 40%;
+    z-index: 0;
+}
+@keyframes shape {
+    from { transform: rotate(0deg);
+    }
+    to { transform: rotate(360deg);
+    }
+}
+.card::after {
+    content: "";
+    position: absolute;
+    background: #0C031F;
+    inset: 5px;
+    animation-delay: -3s;
+    z-index: 1;
+    border-radius: 15px;
+    
+}
+.card .content {
+    position: relative;
+    z-index: 2;
+}
+.card p {
+    color: #cbd5e1;
+    position: relative;
+    z-index: 2;
+}
+
+.card, h3 {
+    color: #D2A2E6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+}
+.card:hover {
+    transform: translateY(-6px);
+}
+/* contact section  */
+.contact {
+    background: #250B3C;
+    padding: 40px;
+    border-radius: 20px;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #461F99;
+    
+}
+.contact p {
+    color: white;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-family:'Lucida Console', monospace;
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.7);
+}
+.contact a.email {
+   color: #72F6FC;
+   text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+   padding-top: 35px;
+   display: block;
+   margin: 20px 0;
+   
+}
+.contact a.email:hover {
+    color: #FCF226;
+	transform: scale(1.05);
+}
+.contact a.num {
+    font-size: 1.5rem;
+    text-shadow: none;
+    padding-top: 20px;
+	color: #72F6FC;
+}
+.contact a.num:hover {
+	color: #00FFD1;
+}
+/* Footer */
+footer {
+   text-align:center;
+   padding: 10px;
+   background: black;
+   color: white;
+   margin-top: 70px;
+}
+.footer p {
+   font-size: 1.2rem;
+}
