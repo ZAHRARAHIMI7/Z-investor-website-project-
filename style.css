@@ -26,7 +26,7 @@
   background:#250B3C;
   color:white;
   border-radius: 20px;
-  align-items: auto;
+  align-self:: auto;
   max-width: 1200px;
 }
 .logo {
@@ -172,7 +172,7 @@
     font-size: 1.9rem;
 }
 .card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-6px)scale(1.05);
 }
 /* contact section  */
 .contact {
@@ -224,3 +224,7 @@ footer {
 .footer p {
    font-size: 1.2rem;
 }
+
+
+
+
